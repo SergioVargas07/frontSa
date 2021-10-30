@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>TuFinca</title>
+</head>
+<body>
+<body bgcolor="yellow">
+<center>
+    <h1> TU FINCA.COM </h1>
+</center>
+    <center>
+    <h1> Categorias</h1>
+    </center>
+    <div id="resultado1"></div>
+    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+    
+    <div>
+        <input type="text" id="Cname" placeholder="name">
+        <input type="text" id="Cdescription" placeholder="description">
+       
+        
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+    <button onclick="actualizarInformacionCategorias()">Actualizar Categorias</button>
+    <center>
+    <h1> Fincas</h1>
+    </center>     
+    <div id="resultado2"></div>
+    <button onclick="traerInformacionFincas()" > Consultar Fincas</button>
+    
+    <div>
+        
+        <input type="text" id="Fname" placeholder="name">
+        <input type="text" id="Faddress" placeholder="address">
+        <input type="number" id="Fextension" placeholder="extension">
+        <input type="text" id="Fdescription" placeholder="description">
+        <select name="category" id="Categorias" placeholder="category_id">
+        </select>
+    </div>
+    <button onclick="guardarInformacionFincas()">Guardar Fincas</button>
+    
+   
+
+
+</body>
+</html>
+
